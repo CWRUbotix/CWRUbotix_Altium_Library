@@ -15,7 +15,7 @@ LibraryDatabaseType=Microsoft Excel 2007
 LibraryDatabasePath=DB.xlsx
 DatabasePathRelative=1
 TopPanelCollapsed=0
-LibrarySearchPath=
+LibrarySearchPath=Models\PCB Footprints;Models\SCH Symbols
 OrcadMultiValueDelimiter=,
 SearchSubDirectories=0
 SchemaName=
@@ -26,6 +26,9 @@ TableName=Analog$
 Enabled=True
 UserWhere=0
 UserWhereText=
+BrowserOrder_Sorting=
+BrowserOrder_Grouping=
+BrowserOrder_Visible=Part Number0=104|Description0=516|Footprint Ref0=119|Library Ref0=102|Manufacturer0=121|Manufacturer PN0=139|Cost0=53
 [Table2]
 SchemaName=
 TableName=Capacitors$
