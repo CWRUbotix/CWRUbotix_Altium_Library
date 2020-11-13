@@ -5,6 +5,11 @@ from tkinter import filedialog
 
 def fix_number_str(s, whole, decimal, mode):
     retval = ''
+    sign_char = ''
+    if s[0] == '-':
+        sign_char = '-'
+        s = s[1:]
+
     digits = 0
     if mode == 'TZ':
         while len(s) < decimal:
@@ -26,7 +31,9 @@ def fix_number_str(s, whole, decimal, mode):
         retval = s
     if retval[0] == '.':
         retval = '0' + retval
-
+    
+    retval = sign_char + retval
+    
     return retval
 
 
@@ -87,7 +94,7 @@ class Application(tk.Frame):
                     fout.write(line)
 
                 else:
-                    new_line = line
+                    new_line = line.strip()
                     if 'X' in line:
                         if 'Y' in line:
                             pass
@@ -104,12 +111,12 @@ class Application(tk.Frame):
                                 parts[1] = fix_number_str(parts[1].strip(), whole_digits, decimal_digits, number_mode)
                                 new_line = "{}Y{}".format(new_line, parts[1])
                     
-                        fout.write(new_line + '\n')
+                        # fout.write(new_line + '\n')
                     elif 'Y' in line:
                         parts = line.split('Y')
                         if '.' not in parts[1]:
                             new_line = "Y{}".format(fix_number_str(parts[1].strip(), whole_digits, decimal_digits, number_mode))
-                        
+                    
                     fout.write(new_line + '\n')
             
 
