@@ -5,7 +5,7 @@ ConnectionString=Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\adam\Documents
 AddMode=3
 RemoveMode=1
 UpdateMode=2
-ViewMode=1
+ViewMode=0
 LeftQuote=[
 RightQuote=]
 QuoteTableNames=1
@@ -19,16 +19,13 @@ LibrarySearchPath=Models\PCB Footprints;Models\SCH Symbols
 OrcadMultiValueDelimiter=,
 SearchSubDirectories=0
 SchemaName=
-LastFocusedTable=Power Reg$
+LastFocusedTable=Analog$
 [Table1]
 SchemaName=
 TableName=Analog$
 Enabled=True
 UserWhere=0
 UserWhereText=
-BrowserOrder_Sorting=
-BrowserOrder_Grouping=
-BrowserOrder_Visible=Part Number0=104|Description0=516|Footprint Ref0=119|Library Ref0=102|Manufacturer0=121|Manufacturer PN0=139|Cost0=53
 [Table2]
 SchemaName=
 TableName=Capacitors$
@@ -89,9 +86,6 @@ TableName=Power Reg$
 Enabled=True
 UserWhere=0
 UserWhereText=
-BrowserOrder_Sorting=
-BrowserOrder_Grouping=
-BrowserOrder_Visible=Part Number0=104|Description0=439|Footprint Ref0=141|Library Ref0=156|Voltage Range In0=130|Voltage Range Out0=142|Max Current0=102|Frequency0=111|Reg Type0=168|Fixed/Adj0=81|Manufacturer0=108|Manufacturer PN0=184|Cost0=53|Weight0=69
 [Table12]
 SchemaName=
 TableName=Resistors$
